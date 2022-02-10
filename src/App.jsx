@@ -1,7 +1,7 @@
-import UI from './module/UI';
+import UI from './module/UI'
 
 function App() {
-	return <UI />;
+  return <UI />
 }
 
-export default App;
+export default App
