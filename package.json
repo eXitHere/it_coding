@@ -2,10 +2,10 @@
   "name": "coding",
   "private": true,
   "version": "0.0.0",
-  "homepage": "http://exithere.github.io/it_coding/",
+  "homepage": "https://exitguy.studio/it_coding/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "GENERATE_SOURCEMAP=false vite build",
     "preview": "vite preview",
     "deploy": "vite build && gh-pages -r git@github.com:eXitHere/it_coding.git -d dist -m \"Update\""
   },
