@@ -2,7 +2,7 @@
   "name": "coding",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://exitguy.studio/it_coding/",
+  "homepage": "https://it.exitguy.studio/",
   "scripts": {
     "dev": "vite",
     "build": "GENERATE_SOURCEMAP=false vite build",
