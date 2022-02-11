@@ -21,7 +21,6 @@ const Popup = ({ isOpen = false, errorMessage = '', onClose }) => {
           OK
         </button>
       </div>
-      <div></div>
     </div>
   )
 }

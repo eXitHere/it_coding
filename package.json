@@ -2,7 +2,7 @@
   "name": "coding",
   "private": true,
   "version": "0.0.0",
-  "homepage": "http://exitguy.studio/it_coding/",
+  "homepage": "http://exithere.github.io/it_coding/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
