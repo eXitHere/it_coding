@@ -94,7 +94,8 @@ const UI = () => {
     const isNotEndWithZeroDecimel = floatValue.toString().replace('.', '') === strValue.replace('.', '')
     const isNumber = !isNaN(strValue) && !isNaN(floatValue)
 
-    if (isNumber && isLessThan3Decimal && isNotEndWithZeroDecimel) setStateCallback(strValue)
+    // if (isNumber && isLessThan3Decimal && isNotEndWithZeroDecimel) setStateCallback(strValue)
+    if (isNumber && isLessThan3Decimal) setStateCallback(strValue)
   }
 
   const enterHandler = () => {
