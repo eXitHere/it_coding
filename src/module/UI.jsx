@@ -88,14 +88,16 @@ const UI = () => {
 
     // snaking_CamelKebab-case
 
+    const bounce = 1e-6
+
     const floatValue = parseFloat(strValue)
 
-    const isLessThan3Decimal = parseFloat(floatValue.toFixed(3)) === floatValue
-    const isNotEndWithZeroDecimel = floatValue.toString().replace('.', '') === strValue.replace('.', '')
+    const isLessThan3Decimal = !strValue.includes('.') || strValue.split('.')[1].length <= 3
+    // const isNotEndWithZeroDecimel = floatValue.toString().replace('.', '') === strValue.replace('.', '')
     const isNumber = !isNaN(strValue) && !isNaN(floatValue)
+    const isInRange = 0 - bounce < floatValue && floatValue < 1000 + bounce
 
-    // if (isNumber && isLessThan3Decimal && isNotEndWithZeroDecimel) setStateCallback(strValue)
-    if (isNumber && isLessThan3Decimal) setStateCallback(strValue)
+    if (isNumber && isLessThan3Decimal && isInRange) setStateCallback(strValue)
   }
 
   const enterHandler = () => {
