@@ -106,7 +106,7 @@ const UI = () => {
     const _side3 = parseFloat(side3)
 
     // sort: max -> min
-    const _sides = [_side1, _side2, _side3].sort((a, b) => b - a)
+    const _sides = [_side1, _side2, _side3].sort((a, b) => a - b)
 
     const _errorMessage = dataChecking(..._sides)
 

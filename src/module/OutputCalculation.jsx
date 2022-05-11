@@ -6,8 +6,6 @@
  * @returns {string} Type of triangle
  */
 export const outputCalculation = (side1, side2, side3) => {
-  ;[side1, side2, side3] = [side1, side2, side3].sort()
-
   let triangleType = ''
   // เมื่อ side_1 = side_2 = side_3 return triangle_type เป็น “Equilateral triangle”
   if (side1 === side2 && side2 === side3 && side1 === side2) {
